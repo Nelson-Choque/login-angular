@@ -1,0 +1,17 @@
+<ng-container [ngSwitch]="variant">
+  <h1 ngClass="{{ className }}" class="text-4xl font-bold" *ngSwitchCase="'h1'">
+    {{ label }}
+  </h1>
+  <h2 ngClass="{{ className }}" class="text-3xl font-bold" *ngSwitchCase="'h2'">
+    {{ label }}
+  </h2>
+  <h3 ngClass="{{ className }}" class="text-2xl font-bold" *ngSwitchCase="'h3'">
+    {{ label }}
+  </h3>
+  <h3 ngClass="{{ className }}" class="text-xl font-bold" *ngSwitchCase="'h4'">
+    {{ label }}
+  </h3>
+  <p ngClass="{{ className }}" *ngSwitchDefault>
+    {{ label }}
+  </p>
+</ng-container>
